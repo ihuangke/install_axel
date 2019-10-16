@@ -23,6 +23,7 @@ yum -y install gcc
 make && make install 
 
 +++++++++++++++++++++++++++++++++++++
+
 三、让yum、wget使用axel加速插件：
 1、复制 axelget.conf 到 /etc/yum/pluginconf.d/ 目录；
 
@@ -45,6 +46,7 @@ vi /usr/lib/yum-plugins/axelget.py
 maxconn=20  （或者更大30）
 
 ————————————————————————————————————————
+
 参考网址： 
 网址：https://blog.csdn.net/zwjzqqb/article/details/79203574?tdsourcetag=s_pcqq_aiomsg
 https://blog.csdn.net/lijiachang8/article/details/77334665
