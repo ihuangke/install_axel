@@ -1,4 +1,4 @@
-一、下载axel-2.17.6.tar.gz
+一、下载 axel-2.17.9.tar.gz
 安装命令：
 1、下载源码包：
 2、解压进入目录：
@@ -7,15 +7,15 @@ yum -y install gcc
 4、配置，编译并安装：
 ./configure --without-ssl
 make && make install
-【axel-2.17安装完成】
+【axel-2.17.9安装完成】
 
 +++++++++++++++++++++++++++++++++++++
 
-二、旧版安装：
-1. 下载axel-2.4.tar.gz
+二、安装：
+1. 下载axel-2.17.9.tar.gz
 2. 解压：
-tar -xvf axel-2.4.tar.gz
-5. cd axel-2.4
+tar -xvf axel-2.17.9.tar.gz
+5. cd axel-2.17.9
 6.安装gcc编译器：
 yum -y install gcc 
 8. 配置，编译并安装：
@@ -28,13 +28,12 @@ make && make install
 1、复制 axelget.conf 到 /etc/yum/pluginconf.d/ 目录；
 
 cd /etc/yum/pluginconf.d/
-wget http://www.ha97.com/code/axelget.conf
-（wget https://github.com/ihuangke/install_axel/blob/master/axelget.conf）
+wget https://github.com/ihuangke/install_axel/blob/master/axelget.conf
 
 2、复制 axelget.py 到 /usr/lib/yum-plugins/ 目录；
 
 cd /usr/lib/yum-plugins/
-wget http://www.ha97.com/code/axelget.py
+wget https://github.com/ihuangke/install_axel/blob/master/axelget.py
 
 3、编辑/etc/yum.conf 文件，修改线程数：
 
